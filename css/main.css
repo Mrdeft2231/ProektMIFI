@@ -1,13 +1,15 @@
 @font-face {
-    font-family: "Merge One";
-    src: url(/main/fonts/MergeOne-Regular.ttf);
+    font-family: "MergeOne";
+    src: url(fonts/MergeOne-Regular.ttf);
+    
 }
-
+@import url('https://fonts.cdnfonts.com/css/merge-one');
 @import url('https://fonts.googleapis.com/css2? Family= Merriweather:wght@300 & display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    font-family: "Merge one", "Arial", sans-serif;
 }
 
 header {
