@@ -1,4 +1,9 @@
+@font-face {
+    font-family: "Merge One";
+    src: url(/main/fonts/MergeOne-Regular.ttf);
+}
 
+@import url('https://fonts.googleapis.com/css2? Family= Merriweather:wght@300 & display=swap');
 
 * {
     margin: 0;
@@ -49,7 +54,8 @@ header {
 }
 
 .nav-text {
-    
+font-family: Merge one;
+font-size: 12px;
 }
 
 .logo img { 
