@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-
+/* Начало хедера */
 
 header {
     display: flex;
@@ -21,7 +21,7 @@ header {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    
+    margin: 0vh 10vh 0vh 10vh;
    
 }
 
@@ -45,21 +45,30 @@ header {
 
 .nav {
     display: flex;
+    
     align-items: center;
 }
 
-.nav-panel {
+.a {
+    color: black;
+    text-decoration: none;
     display: flex;
     gap: 15px;
 }
 
+.nav-panel {
+    display: flex;
+    gap: 45px;
+}
+
 .nav-panel li {
     list-style: none;
-  
+    
 }
 
 .nav-text {
 display: flex;
+
 align-items: center;
 font-family: "Roboto Mono";
 font-size: 12px;
@@ -75,4 +84,52 @@ gap: 15px;
 .nav img {
     width: 29px;
     height: 30px;
+}
+
+/* Начало мейна */
+
+main {
+
+height: 1073px;
+background-color: #E1E1E1;
+
+}
+
+.main {
+display: flex;
+justify-content: space-between;
+padding: 90px 45px 0 50px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1344px;
+    height: 832px;
+    
+}
+
+button {
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+.points img:hover {
+    transform: translateY(-20px);
+}
+
+.points img:active {
+    transform: translateY(-20px);
+    
+}
+
+.points {
+    position: absolute;
+    
+}
+
+.card-main {
+    display: flex;
 }
