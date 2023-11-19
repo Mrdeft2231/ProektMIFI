@@ -107,7 +107,11 @@ padding: 90px 45px 0 50px;
     align-items: center;
     width: 1344px;
     height: 832px;
-    
+}
+
+.map img {
+    width: 1344px;
+    height: 832px;
 }
 
 button {
@@ -117,7 +121,7 @@ button {
 }
 
 .points img:hover {
-    transform: translateY(-20px);
+    
 }
 
 .points img:active {
