@@ -259,7 +259,7 @@ button:hover {
 
     .mains {
         column-gap: 0px;
-        
+        margin-bottom: 15px;
     }
 
     .card img {
