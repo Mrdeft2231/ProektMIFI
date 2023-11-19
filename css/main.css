@@ -28,6 +28,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    
 }
 
 .header-text {
@@ -41,6 +42,7 @@ header {
     font-size: 48px;
     font-family: "Merriweather";
     color: #2A53BE;
+    margin-left: 200px;
 }
 
 .nav {
@@ -50,6 +52,7 @@ header {
 }
 
 .a {
+    
     color: black;
     text-decoration: none;
     display: flex;
@@ -64,6 +67,10 @@ header {
 .nav-panel li {
     list-style: none;
     
+}
+
+.pr {
+    margin-right: 22px;
 }
 
 .nav-text {
@@ -107,13 +114,13 @@ main {
 
 .card img {
     width: 434px;
-    
+    max-height: 420px;
 }
 
 .content {
     border: 4px solid black;
-    width: 434px;
-    height: 841px;
+    width: 500px;
+    height: 830px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,4 +158,83 @@ button {
     height: 85px;
     border-radius: 50px;
     margin-top: 15px;
+   
+
+    
+}
+
+button:hover {
+    background-color: #2A53BE;
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width:1000px) {
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid; */
+    max-width: 320px;
+    
+}
+
+    header {
+        
+        display: flex;
+        width: 320px;
+        height: 185px;
+        background-color: #ffffff;
+        border: 1px solid black;
+    }
+    
+    .contener {
+        
+        margin: 0px;
+        box-sizing: content-box;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 5px 0px 0 10px;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 30px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 51px;
+    }
+    
+    .header-text {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+
+    .header-text h1 {
+        font-size: 11px;
+        margin-left: 0;
+    }
+
+    .nav {
+        width: 320px;
+    }
+
+    .nav-panel {
+        gap: 0;
+    }
+
+    .nav img {
+            width: 29px;
+            height: 30px;
+    }
+
+
+
 }
