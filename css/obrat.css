@@ -85,7 +85,7 @@ header {
 
 .text {
   font-family:"Roboto Mono";
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .text p {
@@ -145,7 +145,7 @@ main {
     border: solid 2px white;
     border-radius: 999px;
     background-color: transparent;
-    margin: 50vh 6px 0 6px;
+    margin: 46vh 6px 0 6px;
     z-index: 2;
     cursor: pointer;
     transition-duration: .4s;
@@ -250,15 +250,12 @@ main {
     background-repeat: no-repeat;
   }
 
-  .main {
-    max-height: 2000px;
-  }
 
   .main img {
     
     width: 310px;
     height: 74px;
-    padding-top: 50px;
+    padding-top: 10px;
   }
 
   .text-mini {
@@ -267,7 +264,7 @@ main {
   }
 
   .button {
-    margin-top: 20px;
+    margin-top: 10px;
     
   }
 
