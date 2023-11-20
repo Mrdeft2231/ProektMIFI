@@ -105,6 +105,13 @@ main {
     
 }
 
+.text-header {
+    color: red;
+    text-align: center;
+    font-family: "Roboto Mono";
+    margin-bottom: 10px;
+}
+
 .mains {
     
     display: flex;
