@@ -93,6 +93,10 @@ gap: 15px;
     height: 30px;
 }
 
+main {
+  max-height: 1000px;
+}
+
 body, html {
     padding: 0;
     margin: 0;
@@ -208,16 +212,16 @@ body, html {
   .bg1{
     background-image: url(/main/image/111.png);
     
-    background-size:contain; 
+    background-size:auto; 
   
   }
   .bg2{
     background-image: url(/main/image/222.png);
-    background-size: contain;
+    background-size: auto;
   }
   .bg3{
     background-image: url(/main/image/333.png);
-    background-size: contain;
+    background-size: auto;
   }
   .bg4{
     background-image: url(https://images.unsplash.com/photo-1504700610630-ac6aba3536d3?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=92d2cae094fb24e5266221828ee251e2);
