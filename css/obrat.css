@@ -6,6 +6,16 @@
     padding: 0;
 }
 
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  user-select: none;
+}
+
 /* Начало хедера */
 
 header {
@@ -94,19 +104,10 @@ gap: 15px;
 }
 
 main {
+  max-width: 320px;
   max-height: 1000px;
 }
 
-body, html {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    overflow: hidden;
-    user-select: none;
-  }
-  
   .sr-only {
     position: absolute;
     pointer-events: none;
@@ -230,6 +231,7 @@ body, html {
   .bg5{
     background-image: url(/main/image/5.png);
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
 @media screen and (max-width:1000px) {
