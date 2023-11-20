@@ -7,6 +7,7 @@
 }
 
 body, html {
+  
   padding: 0;
   margin: 0;
   width: 100%;;
@@ -79,13 +80,23 @@ header {
     
 }
 
+.text {
+  font-family:"Roboto Mono";
+  font-size: 12px;
+}
+
+.text p {
+  color: red;
+}
+
+
+
 .pr {
     margin-right: 22px;
 }
 
 .nav-text {
 display: flex;
-
 align-items: center;
 font-family: "Roboto Mono";
 font-size: 12px;
@@ -131,7 +142,7 @@ main {
     border: solid 2px white;
     border-radius: 999px;
     background-color: transparent;
-    margin: 95vh 6px 0 6px;
+    margin: 45vh 6px 0 6px;
     z-index: 2;
     cursor: pointer;
     transition-duration: .4s;
@@ -152,7 +163,9 @@ main {
     transition: background-size 200ms;
     position: absolute;
     color: white;
-    height: calc(95vh - 12px);
+    /* height:  calc(95vh - 12px); */
+    height: 70px;
+    margin-top: 400px;
     width: 80px;
     top: 0;
     left: 0;
@@ -165,7 +178,7 @@ main {
   
   input:checked + label::after {
     background-image: none;
-    width: 100vw;
+    /* width: 100vw; */
     left: 0;
     z-index: 10;
   }
@@ -202,7 +215,7 @@ main {
   }
   
   input:checked ~ .slide {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   
   input:checked + label + .slide {
@@ -232,6 +245,18 @@ main {
     background-image: url(/main/image/5.png);
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  .main img {
+    margin: 0 auto;
+    width: 310px;
+    height: 74px;
+    padding-top: 50px;
+  }
+
+  .text-mini {
+    font-family: "Roboto Mono";
+    padding-top: 20px;
   }
 
 @media screen and (max-width:1000px) {
