@@ -17,6 +17,9 @@ self.addEventListener('istall', Event =>{
     Event.waitUntil(
         caches.open(staticCacheName).then(cache => cache.addAll(assetUrls))
     )
+    let staticCacheName = localStorage.getItem([assetUrls]);
+    localStorage.setItem([assetUrls], [staticCacheName]);
+
 })
 self.addEventListener('activate', Event =>{
     console.log('[SW]: activate')
