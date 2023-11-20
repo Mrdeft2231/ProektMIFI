@@ -210,24 +210,26 @@ body, html {
   }
   
   .bg1{
-    background-image: url(/main/image/111.png);
+    background-image: url(/main/image/1.png);
     
-    background-size:auto; 
+    background-size:contain; 
   
   }
   .bg2{
-    background-image: url(/main/image/222.png);
-    background-size: auto;
+    background-image: url(/main/image/rudenko.jpg);
+    background-size: contain;
   }
   .bg3{
-    background-image: url(/main/image/333.png);
-    background-size: auto;
+    background-image: url(/main/image/3.png);
+    background-size: contain;
   }
   .bg4{
-    background-image: url(https://images.unsplash.com/photo-1504700610630-ac6aba3536d3?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=92d2cae094fb24e5266221828ee251e2);
+    background-image: url(/main/image/4.png);
+    background-size: contain;
   }
   .bg5{
-    background-image: url(https://images.unsplash.com/reserve/wPCyys8TPCHY3GXm2N2D_ssp_inthewoods_1.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=654d988a19f43ca9ac27f2eacbe2a554);
+    background-image: url(/main/image/5.png);
+    background-size: contain;
   }
 
 @media screen and (max-width:1000px) {
