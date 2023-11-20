@@ -21,3 +21,4 @@ self.addEventListener('istall', Event =>{
 self.addEventListener('activate', Event =>{
     console.log('[SW]: activate')
 })
+
