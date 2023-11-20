@@ -94,6 +94,7 @@ gap: 15px;
 main {
     background-color: #E1E1E1;
     max-height: 2000px;
+    height: 700px;
 }
 
 .text-main {
@@ -110,6 +111,10 @@ main {
     align-items: center;
 }
 
+.img-map  img{
+    width: 300px;
+}
+
 .text {
     font-family: "Roboto Mono";
     font-size: 10px;
@@ -122,6 +127,7 @@ main {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    margin: 0 auto;
 }
 
 button {
@@ -133,7 +139,8 @@ button:active {
     background-color: crimson;
 }
 
-@media screen and (max-width:1000px) {
+
+@media screen and (max-width:1200px) {
     * {
         margin: 0;
         padding: 0;

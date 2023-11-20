@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2? Family= Merriweather:wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Press+Start+2P&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Начало хедера */
+
+header {
+    display: flex;
+    height: 185px;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
+
+.contener {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0vh 10vh 0vh 10vh;
+   
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-text h1 {
+    font-size: 48px;
+    font-family: "Merriweather";
+    color: #2A53BE;
+    margin-left: 200px;
+}
+
+.nav {
+    display: flex;
+    
+    align-items: center;
+}
+
+.a {
+    
+    color: black;
+    text-decoration: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-panel {
+    display: flex;
+    gap: 45px;
+}
+
+.nav-panel li {
+    list-style: none;
+    
+}
+
+.pr {
+    margin-right: 22px;
+}
+
+.nav-text {
+display: flex;
+
+align-items: center;
+font-family: "Roboto Mono";
+font-size: 12px;
+width: 87px;
+gap: 15px;
+}
+
+.logo img { 
+    width: 263px;
+    height: 160px;
+}
+
+.nav img {
+    width: 29px;
+    height: 30px;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    user-select: none;
+  }
+  
+  .sr-only {
+    position: absolute;
+    pointer-events: none;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: transparent;
+  }
+  
+  input {
+    position: absolute;  
+    opacity: 0;
+    /* margin-top: 95vh; */
+    cursor: pointer;
+  }
+  
+  label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: solid 2px white;
+    border-radius: 999px;
+    background-color: transparent;
+    margin: 95vh 6px 0 6px;
+    z-index: 2;
+    cursor: pointer;
+    transition-duration: .4s;
+    box-shadow: 0 0 20px 0 #000;
+  }
+  
+  input:checked + label{
+    background-color: white;
+  }
+  
+  input + label::after{
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' width='100' style='fill:white'%3E%3Cpath d='M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center 55%;
+    background-size: 80px 80px;
+    line-height: 100vh;
+    transition: background-size 200ms;
+    position: absolute;
+    color: white;
+    height: calc(95vh - 12px);
+    width: 80px;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  
+  input + label:hover::after {
+    background-size: 90px 90px;
+  }
+  
+  input:checked + label::after {
+    background-image: none;
+    width: 100vw;
+    left: 0;
+    z-index: 10;
+  }
+  
+  input:checked + label + .slide ~ input + label::after {
+    display: none;
+  }
+  
+  input:checked + label + .slide + input + label::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' width='100' fill='white'%3E%3Cpath d='M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z' /%3E%3C/svg%3E");
+    display: block;
+    width: 80px;
+    right: 0;
+    left: auto;
+  }
+  
+  input:focus + label{
+    box-shadow: 0 0 0 2px teal, 0 0 18px white;
+  }
+  
+  .slide {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition-duration: .4s;
+    opacity: 1;
+  }
+  
+  input:checked ~ .slide {
+    transform: translateX(100%);
+  }
+  
+  input:checked + label + .slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .bg1{
+    background-image: url(/main/image/111.png);
+    
+    background-size:contain; 
+  
+  }
+  .bg2{
+    background-image: url(/main/image/222.png);
+    background-size: contain;
+  }
+  .bg3{
+    background-image: url(/main/image/333.png);
+    background-size: contain;
+  }
+  .bg4{
+    background-image: url(https://images.unsplash.com/photo-1504700610630-ac6aba3536d3?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=92d2cae094fb24e5266221828ee251e2);
+  }
+  .bg5{
+    background-image: url(https://images.unsplash.com/reserve/wPCyys8TPCHY3GXm2N2D_ssp_inthewoods_1.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=654d988a19f43ca9ac27f2eacbe2a554);
+  }
+
+@media screen and (max-width:1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid; */
+        max-width: 320px;
+        
+    }
+    
+        header {
+            
+            display: flex;
+            width: 320px;
+            height: 185px;
+            background-color: #ffffff;
+            border: 1px solid black;
+        }
+        
+        .contener {
+            
+            margin: 0px;
+            box-sizing: content-box;
+            
+            display: flex;
+            flex-direction: column;
+            
+            margin: 5px 0px 0 10px;
+        }
+        
+        .logo {
+            display: flex;
+        }
+    
+        .logo img {
+            width: 80px;
+            height: 51px;
+        }
+        
+        .header-text {
+            margin: 0;
+            padding: 0;
+            height: 30px;
+            display: flex;
+            
+            justify-content: center;
+            align-items: flex-start;
+            
+            
+        }
+    
+        .header-text h1 {
+            font-size: 20px;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    
+        .nav {
+            height: 185px;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+    
+        .nav-panel {
+            gap: 0;
+            display: flex;
+        }
+    
+        .nado {
+            margin-left: 10px;
+        }
+        .nav-text {
+            font-size: 8px;
+        }
+    
+        .nav img {
+            width: 20px;
+            height: 20px;
+        }
+    }
