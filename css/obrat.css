@@ -264,7 +264,7 @@ main {
   }
 
   .button {
-    margin-top: 10px;
+    margin-top: 10 0 20px 0;
     
   }
 
@@ -343,7 +343,7 @@ main {
     
         .nav {
             height: 185px;
-            width: 320px;
+            width: 309px;
             display: flex;
             flex-direction: column;
             justify-content: center;

@@ -39,6 +39,7 @@ header {
 }
 
 .header-text h1 {
+    text-align: center;
     font-size: 48px;
     font-family: "Merriweather";
     color: #2A53BE;
@@ -215,7 +216,7 @@ button:hover {
     }
     
     .header-text {
-        margin: 0;
+        margin: 0 20px 0 0;
         padding: 0;
         height: 30px;
         display: flex;
