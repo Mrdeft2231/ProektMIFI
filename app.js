@@ -1,8 +1,7 @@
-
-    
-if ('serviceWorker' in navigator){
- navigator.serviceWorker.register("sw.js")
- .then(() => console.log("зарегали"))
- .catch(() => console.log("Ошибкаа"));
+const onWorkerReady = () => {
+    console.log('SW is ready');
 }
 
+navigator.serviceWorker.register('sw.js');
+
+navigator.serviceWorker.ready.then(onWorkerReady);
